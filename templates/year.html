@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media (max-width: 576px) {
+            #first{
+            margin-right: 70px;
+
+        }
+
+       .a{
+        margin-right: 70px;     
+       }
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            border-radius: 50px;
+        }
+        #first{
+            float: left;
+            margin:0 100px;
+            margin-top: 30px;
+        }
+       .a{
+                margin-left: 180px;
+       }
+       h1{
+        
+       }
+    </style>
+</head>
+<body>
+    {% include 'nav1.html' %}
+    <center><h1  id="h">{{name}}</h1></center>
+    <center><h2 class="clg">department of {{link}}</h2></center>
+    <div class="a">
+        <a id="first" href="{{link}}/1"><img src="{% static 'images/years/first.jpeg' %}" alt="" width="250px" height="250px"></a>
+    </div>
+    <div class="a">   
+        <a id="first" href="{{link}}/2"><img src="{% static 'images/years/second.jpg' %}" alt="" width="250px" height="250px"></a>
+    </div> 
+    <div class="a">   
+        <a id="first" href="{{link}}/3"><img src="{% static 'images/years/third.jpg' %}" alt="" width="250px" height="250px"></a>
+    </div> 
+    <div class="a">  
+        <a id="first" href="{{link}}/4"><img src="{% static 'images/years/final.jpg' %}" alt="" width="250px" height="250px"></a>
+    </div> 
+</body>
+
+</html>
